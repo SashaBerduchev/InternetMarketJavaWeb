@@ -27,4 +27,10 @@ public class GrphicsCard {
     @Column(name = "Voltage")
     private String Voltage;
 
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
 }
