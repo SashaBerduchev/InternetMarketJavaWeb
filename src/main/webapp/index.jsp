@@ -5,6 +5,9 @@
     <title>Proselyte</title>
 </head>
 <body>
+<b> Hellow World</b>
+<b> Berduchev </b>
+<br>
 <h3>Proselyte presents</h3>
 <br/>
 <a href="<c:url value="/phones"/>" target="_blank">Phones list</a>
