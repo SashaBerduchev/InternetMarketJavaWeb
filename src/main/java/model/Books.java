@@ -23,6 +23,6 @@ public class Books {
     @Column(name = "Shop")
     private String Shop;
 
-    @Column(name = "Cosr")
+    @Column(name = "Cost")
     private Integer Cost;
 }
