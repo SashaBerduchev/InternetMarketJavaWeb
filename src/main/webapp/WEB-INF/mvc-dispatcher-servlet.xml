@@ -18,7 +18,7 @@
           destroy-method="close">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
         <property name="url"
-                  value="jdbc:mysql://localhost:3306/BOOKMANAGER"/>
+                  value="jdbc:mysql://localhost:3306/InternetMarketJavaWeb"/>
         <property name="username" value="root"/>
         <property name="password" value="ВАШ ПАРОЛЬ"/>
     </bean>
@@ -29,7 +29,13 @@
         <property name="dataSource" ref="dataSource"/>
         <property name="annotatedClasses">
             <list>
-                <value>net.proselyte.bookmanager.model.Book</value>
+                <value>net.proselyte.InternetMarketJavaWeb.model.Phones</value>
+            </list>
+            <list>
+                <value>net.proselyte.InternetMarketJavaWeb.model.Computers</value>
+            </list>
+            <list>
+                <value>net.proselyte.InternetMarketJavaWeb.model.GrphicsCard</value>
             </list>
         </property>
         <property name="hibernateProperties">
@@ -46,11 +52,17 @@
         <property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory"/>
     </bean>
 
-    <bean id="bookService" class="net.proselyte.bookmanager.service.BookServiceImpl">
-        <property name="bookDao" ref="bookDao"/>
+    <bean id="phonesService" class="java.service.PhonesServiceImpl">
+        <property name="phonesDao" ref="phonesDao"/>
+    </bean>
+    <bean id="computersService" class="java.service.ComputersServiceImpl">
+        <property name="computersDao" ref="computersDao"/>
+    </bean>
+    <bean id="graphicsService" class="java.service.GraphicsCardImpl">
+        <property name="graphicsDao" ref="graphicsDao">
     </bean>
 
-    <context:component-scan base-package="net.proselyte.bookmanager"/>
+    <context:component-scan base-package="java"/>
 
     <tx:annotation-driven transaction-manager="transactionManager"/>
 

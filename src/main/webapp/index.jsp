@@ -7,10 +7,14 @@
 <body>
 <b> Hellow World</b>
 <b> Berduchev </b>
+<style type="text\css">
+    <%@ include file="/WEB-INF/css/HTMLStyle.css" %>
+</style>
 <br>
 <h3>Proselyte presents</h3>
 <br/>
 <a href="<c:url value="/WEB-INF/Pages/phones.jsp"/>" target="_blank">Phones list</a>
+<a href="<c:url value="/WEB-INF/Pages/computers.jsp"/>" target="_blank">Phones list</a>
 <br/>
 </body>
 </html>

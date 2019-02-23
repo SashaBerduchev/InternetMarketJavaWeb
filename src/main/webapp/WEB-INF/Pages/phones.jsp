@@ -11,8 +11,8 @@
 <html>
 <head>
     <title>Phones Page</title>
-    <style>
-        <%@include file='css/HTMLStyle.css' %>
+    <style type="text\css">
+        <%@ include file="/WEB-INF/css/HTMLStyle.css" %>
     </style>
 </head>
 <body>
