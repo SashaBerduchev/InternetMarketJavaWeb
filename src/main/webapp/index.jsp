@@ -21,8 +21,8 @@
 <a href="<c:url value="/Pages/computers.jsp"/>" target="_blank">Computers list</a>
 <br/>
 
-<button class="button">Phones</button>
+<button class="buttonPhone" >Phones</button>
 
-<script src="JS/JSscript.js"></script>
+<script src="JS/JSBttnPhone.js"></script>
 </body>
 </html>
