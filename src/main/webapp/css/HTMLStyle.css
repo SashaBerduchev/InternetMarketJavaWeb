@@ -34,3 +34,25 @@
 .tg .tg-4eph {
     background-color: #f9f9f9;
 }
+
+.button {
+    height: 50px;
+    padding: 0 35px;
+    border-radius: 50px;
+    line-height: 50px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    white-space: nowrap;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    transition: background-color .2s;
+    color: #fff;
+    background-color: #18a3fa;
+}
