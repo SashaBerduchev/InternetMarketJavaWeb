@@ -10,10 +10,7 @@
 <br>
 <h3>Proselyte presents</h3>
 <br/>
-<a href="<c:url value="/phones"/>" target="_blank">Phones list</a>
-<a href="<c:url value="/graphicscard"/>" target="_blank">GraphicCard list</a>
-<a href="<c:url value="/computers"/>" target="_blank">Computers list</a>
-<a href="<c:url value="/books"/>" target="_blank">Books</a>
+<a href="<c:url value="/WEB-INF/Pages/phones.jsp"/>" target="_blank">Phones list</a>
 <br/>
 </body>
 </html>
