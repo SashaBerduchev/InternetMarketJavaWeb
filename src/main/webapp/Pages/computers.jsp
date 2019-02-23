@@ -12,12 +12,15 @@
 <head>
     <title>Computers</title>
     <style type="text\css">
-        <%@ include file="/WEB-INF/css/HTMLStyle.css" %>
+        <%@ include file="/css/HTMLStyle.css" %>
     </style>
 </head>
 <body>
 
-<a href="../../index.jsp"> Back to main meny</a>
+<a href="../index.jsp"> Back to main meny</a>
+
+
+<h1> Computers List</h1>
 
 <c:if test="${!empty listComputers}">
     <table class="tg">
