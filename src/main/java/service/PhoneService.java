@@ -2,10 +2,9 @@ package service;
 
 import model.Phones;
 
-import java.awt.*;
 import java.util.List;
 
-public interface PhoneServise {
+public interface PhoneService {
     public void  addPhone(Phones phones);
 
     public void updatePhone(Phones phones);

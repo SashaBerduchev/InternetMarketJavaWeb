@@ -19,7 +19,7 @@
     </style>
 </head>
 <body>
-<a href="../index.jsp"> Back to main meny</a>
+<a href="../../index.jsp"> Back to main meny</a>
 
 <br/>
 <br/>
@@ -59,11 +59,11 @@
 
 <h1>Add a Phones</h1>
 
-<c:url var="addAction" value="/Phones/add"/>
+<c:url var="addAction" value="/phone/add"/>
 
-<form:form action="${addAction}" commandName="Phones">
+<form:form action="${addAction}" commandName="phone">
     <table>
-        <c:if test="${!empty phone.bookTitle}">
+        <c:if test="${!empty phone}">
             <tr>
                 <td>
                     <form:label path="id">

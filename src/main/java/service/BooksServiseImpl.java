@@ -2,10 +2,12 @@ package service;
 
 import dao.BooksDao;
 import model.Books;
+import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.List;
 
+@Service
 public class BooksServiseImpl implements BooksServise {
     private BooksDao booksDao;
     private  void setBooksDao(BooksDao booksDao){this.booksDao = booksDao;}

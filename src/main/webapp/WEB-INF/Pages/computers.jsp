@@ -17,7 +17,7 @@
 </head>
 <body>
 
-<a href="../index.jsp"> Back to main meny</a>
+<a href="../../index.jsp"> Back to main meny</a>
 
 
 <h1> Computers List</h1>

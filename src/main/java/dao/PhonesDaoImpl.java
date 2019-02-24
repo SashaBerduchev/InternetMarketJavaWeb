@@ -5,9 +5,11 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public class PhonesDaoImpl implements PhonesDao {
    private  static final Logger LOGGER = LoggerFactory.getLogger(PhonesDaoImpl.class);
 
@@ -37,14 +39,14 @@ public class PhonesDaoImpl implements PhonesDao {
         if(phones!=null){
             session.delete(phones);
         }
-        LOGGER.info("Book successfully removed. Book details: " + phones);
+        LOGGER.info("Phone successfully removed. Phone details: " + phones);
     }
 
     @Override
     public Phones getPhoneById(int id) {
         Session session = this.sessionFactory.getCurrentSession();
         Phones phones = (Phones) session.load(Phones.class, new Integer(id));
-        LOGGER.info("Book successfully loaded. Book details: " + phones);
+        LOGGER.info("Phone successfully loaded. Phone details: " + phones);
 
         return phones;
     }

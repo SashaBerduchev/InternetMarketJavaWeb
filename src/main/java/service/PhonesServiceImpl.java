@@ -2,11 +2,13 @@ package service;
 
 import dao.PhonesDao;
 import model.Phones;
+import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.List;
 
-public class PhonesServiceImpl implements PhoneServise {
+@Service
+public class PhonesServiceImpl implements PhoneService {
     private PhonesDao phonesDao;
 
     public  void setPhonesDao(PhonesDao phonesDao){this.phonesDao = phonesDao;}

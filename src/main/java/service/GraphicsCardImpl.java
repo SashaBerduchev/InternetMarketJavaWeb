@@ -3,11 +3,13 @@ package service;
 import dao.GraphicsCardDao;
 import dao.PhonesDao;
 import model.GrphicsCard;
+import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.awt.*;
 import java.util.List;
 
+@Service
 public class GraphicsCardImpl implements GraficsCardService {
     private GraphicsCardDao graphicsCardDao;
 
