@@ -16,7 +16,7 @@
     <title>PhonesData</title>
 
     <style type="text\css">
-        <%@ include file="/css/HTMLDataStyle.css" %>
+        <%@ include file="/WEB-INF/css/HTMLDataStyle.css" %>
     </style>
 </head>
 <body>
@@ -25,15 +25,23 @@
 <table class="tg">
 <tr>
     <th width="80">ID</th>
-    <th width="120">Title</th>
-    <th width="120">Author</th>
-    <th width="120">Price</th>
+    <th width="120">Firm</th>
+    <th width="120">Model</th>
+    <th width="120">Quantity</th>
+    <th width="120">Processor</th>
+    <th width="120">RAM</th>
+    <th width="120">Battery</th>
+    <th width="120">Cost</th>
 </tr>
 <tr>
     <td>${phones.id}</td>
-    <td>${phones.bookTitle}</td>
-    <td>${phones.bookAuthor}</td>
-    <td>${phones.cost}</td>
+    <td>${phones.Firm</td>
+    <td>${phones.Model}</td>
+    <td>${phones.Quantity}</td>
+    <td>${phones.Processor}</td>
+    <td>${phones.RAM}</td>
+    <td>${phones.Battery}</td>
+    <td>${phones.Cost}</td>
 </tr>
 </table>
 </body>

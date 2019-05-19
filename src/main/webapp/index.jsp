@@ -8,7 +8,7 @@
 <b> Hellow World</b>
 <b> Berduchev </b>
 <style type="text\css">
-    <%@ include file="/css/HTMLStyle.css" %>
+    <%@ include file="/WEB-INF/css/HTMLStyle.css" %>
 </style>
 <br>
 <h3>Proselyte presents</h3>
@@ -17,8 +17,8 @@
     <img src="Picture/IMG_20180629_103235.jpg"/>
     <img src="Picture/beautiful-cool-disney-princess-eyes-Favim.com-2071730.jpg"/>
 </div>
-<a href="<c:url value="/Pages/phones.jsp"/>" target="_blank">Phones list</a>
-<a href="<c:url value="/Pages/computers.jsp"/>" target="_blank">Computers list</a>
+<a href="<c:url value="/WEB-INF/Pages/phones.jsp"/>" target="_blank">Phones list</a>
+<a href="<c:url value="/WEB-INF/Pages/computers.jsp"/>" target="_blank">Computers list</a>
 <br/>
 
 <button class="buttonPhone" >Phones</button>
