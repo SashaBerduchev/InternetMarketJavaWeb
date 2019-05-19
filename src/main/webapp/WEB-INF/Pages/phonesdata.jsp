@@ -31,11 +31,11 @@
     <th width="120">Processor</th>
     <th width="120">RAM</th>
     <th width="120">Battery</th>
-    <th width="120">Cost</th>
+    <th width="120">Battery</th>
 </tr>
 <tr>
     <td>${phones.id}</td>
-    <td>${phones.Firm</td>
+    <td>${phones.Firm}</td>
     <td>${phones.Model}</td>
     <td>${phones.Quantity}</td>
     <td>${phones.Processor}</td>

@@ -33,6 +33,10 @@ public class Phones {
     @Column(name = "Battery")
     private String Battery;
 
+    public Phones(){
+
+    }
+
     public int getId() {
         return id;
     }

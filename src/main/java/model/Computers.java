@@ -28,6 +28,10 @@ public class Computers {
     @Column(name = "Graphics")
     private String Graphics;
 
+    public Computers(){
+
+    }
+
     public int getId() {
         return id;
     }
