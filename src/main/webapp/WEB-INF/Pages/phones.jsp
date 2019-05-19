@@ -61,7 +61,7 @@
 
 <c:url var="addAction" value="/phone/add"/>
 
-<form:form action="${addAction}" commandName="phone">
+<form:form action="${addAction}" commandName="phones">
     <table>
         <c:if test="${!empty phone}">
             <tr>
@@ -78,17 +78,17 @@
         </c:if>
         <tr>
             <td>
-                <form:label path="bookTitle">
+                <form:label path="phoneName">
                     <spring:message text="Title"/>
                 </form:label>
             </td>
             <td>
-                <form:input path="bookTitle"/>
+                <form:input path="phoneModel"/>
             </td>
         </tr>
         <tr>
             <td>
-                <form:label path="bookAuthor">
+                <form:label path="phoneQuantity">
                     <spring:message text="Author"/>
                 </form:label>
             </td>
@@ -108,13 +108,13 @@
         </tr>
         <tr>
             <td colspan="2">
-                <c:if test="${!empty book.bookTitle}">
+                <c:if test="${!empty phones.phoneName}">
                     <input type="submit"
-                           value="<spring:message text="Edit Book"/>"/>
+                           value="<spring:message text="Edit Phone"/>"/>
                 </c:if>
-                <c:if test="${empty book.bookTitle}">
+                <c:if test="${empty phones.phoneName}">
                     <input type="submit"
-                           value="<spring:message text="Add Book"/>"/>
+                           value="<spring:message text="Add Phone"/>"/>
                 </c:if>
             </td>
         </tr>
