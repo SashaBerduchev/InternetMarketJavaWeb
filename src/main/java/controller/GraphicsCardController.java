@@ -2,7 +2,6 @@ package controller;
 
 
 import model.GrphicsCard;
-import model.Phones;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.ui.Model;
@@ -11,9 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import service.GraficsCardService;
-import service.PhoneServise;
 
-import java.awt.*;
 import java.awt.print.Book;
 
 public class GraphicsCardController {

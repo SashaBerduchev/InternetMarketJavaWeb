@@ -1,14 +1,12 @@
 create table Computers
 (
-	id int auto_increment,
-	firm nvarchar not null,
-	model nvarchar not null,
-	quantity nvarchar not null,
-	cost nvarchar not null,
-	processor nvarchar not null,
-	ram nvarchar not null,
-	vram nvarchar not null,
-	grafics nvarchar not null,
-	constraint Computers_pk
-		primary key (id)
+    id int auto_increment primary key ,
+    firm nvarchar(50) not null,
+    model nvarchar(50) not null,
+    quantity nvarchar(50) not null,
+    cost nvarchar(50) not null,
+    processor nvarchar(50) not null,
+    ram nvarchar(50) not null,
+    vram nvarchar(50) not null,
+    grafics nvarchar(50) not null
 );

@@ -1,11 +1,11 @@
 create table Phones
 (
-	id int auto_increment,
-	Firm nvarchar not null,
-	Model nvarchar not null,
-	Quantity nvarchar not null,
-	Cost nvarchar not null,
-	Processor nvarchar not null,
-	RAM nvarchar not null,
-	Battery nvarchar null
+	id int auto_increment primary key ,
+	Firm nvarchar(50) not null,
+	Model nvarchar(50) not null,
+	Quantity nvarchar(50) not null,
+	Cost nvarchar(50) not null,
+	Processor nvarchar(50) not null,
+	RAM nvarchar(50) not null,
+	Battery nvarchar(50) null
 );
