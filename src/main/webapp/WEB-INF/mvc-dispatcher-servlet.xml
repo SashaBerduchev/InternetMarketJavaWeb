@@ -7,7 +7,7 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
 http://www.springframework.org/schema/tx ">
 
-    <context:component-scan base-package="java"/>
+    <context:component-scan base-package="net.berduchev.internetmarket"/>
 
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="WEB-INF/Pages"/>
@@ -30,7 +30,7 @@ http://www.springframework.org/schema/tx ">
         <property name="dataSource" ref="dataSource"/>
         <property name="annotatedClasses">
             <list>
-                <value>net.proselyte.bookmanager.model.Book</value>
+                <value>net.berduchev.internetmarket.model.Books</value>
             </list>
         </property>
         <property name="hibernateProperties">
@@ -43,15 +43,15 @@ http://www.springframework.org/schema/tx ">
     </bean>
 
     <!--BookDao and BookService beans-->
-    <bean id="bookDao" class="dao.PhonesDaoImpl">
+    <bean id="bookDao" class="net.berduchev.internetmarket.dao.BooksDaoImpl">
         <property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory"/>
     </bean>
 
-    <bean id="bookService" class="service.PhonesServiceImpl">
+    <bean id="bookService" class="net.berduchev.internetmarket.service.BooksServiseImpl">
         <property name="" ref="bookDao"/>
     </bean>
 
-    <context:component-scan base-package="java"/>
+    <context:component-scan base-package="net.berduchev.internetmarket"/>
 
     <tx:annotation-driven transaction-manager="transactionManager"/>
 

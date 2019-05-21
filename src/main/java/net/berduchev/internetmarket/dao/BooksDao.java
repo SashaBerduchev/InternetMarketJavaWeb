@@ -1,6 +1,6 @@
-package dao;
+package net.berduchev.internetmarket.dao;
 
-import model.Books;
+import net.berduchev.internetmarket.model.Books;
 
 import java.util.List;
 

@@ -1,12 +1,11 @@
-package service;
+package net.berduchev.internetmarket.service;
 
-import dao.GraphicsCardDao;
-import dao.PhonesDao;
-import model.GrphicsCard;
+import net.berduchev.internetmarket.dao.GraphicsCardDao;
+import net.berduchev.internetmarket.dao.PhonesDao;
+import net.berduchev.internetmarket.model.GrphicsCard;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
-import java.awt.*;
 import java.util.List;
 
 @Service

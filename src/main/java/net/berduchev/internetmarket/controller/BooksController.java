@@ -1,6 +1,6 @@
-package controller;
+package net.berduchev.internetmarket.controller;
 
-import model.Books;
+import net.berduchev.internetmarket.model.Books;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.ui.Model;
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import service.BooksServise;
+import net.berduchev.internetmarket.service.BooksServise;
 
 
 public class BooksController {

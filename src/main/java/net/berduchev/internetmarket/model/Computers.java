@@ -1,39 +1,34 @@
-package model;
+package net.berduchev.internetmarket.model;
 
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-import javax.persistence.*;
-
-@Entity
-@Table(name = "Phones")
-public class Phones {
+public class Computers {
 
     @Id
     @Column(name = "ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-
     @Column(name = "Firm")
     private String Firm;
-
     @Column(name = "Model")
     private String Model;
-
     @Column(name = "Quantity")
     private String Quantity;
-
     @Column(name = "Cost")
     private String Cost;
-
     @Column(name = "Processor")
     private String Processor;
-
-    @Column(name = "RAM")
+    @Column(name = "Ram")
     private String RAM;
+    @Column(name = "VRAM")
+    private String VRAM;
+    @Column(name = "Graphics")
+    private String Graphics;
 
-    @Column(name = "Battery")
-    private String Battery;
-
-    public Phones(){
+    public Computers(){
 
     }
 

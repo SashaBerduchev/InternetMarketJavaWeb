@@ -1,6 +1,6 @@
-package dao;
+package net.berduchev.internetmarket.dao;
 
-import model.Phones;
+import net.berduchev.internetmarket.model.Phones;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.slf4j.Logger;

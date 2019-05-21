@@ -1,8 +1,7 @@
-package model;
+package net.berduchev.internetmarket.model;
 
 
 
-import javax.naming.Name;
 import javax.persistence.*;
 
 @Entity

@@ -1,7 +1,7 @@
-package service;
+package net.berduchev.internetmarket.service;
 
-import dao.ComputersDao;
-import model.Computers;
+import net.berduchev.internetmarket.dao.ComputersDao;
+import net.berduchev.internetmarket.model.Computers;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;

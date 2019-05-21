@@ -1,7 +1,7 @@
-package controller;
+package net.berduchev.internetmarket.controller;
 
 
-import model.Computers;
+import net.berduchev.internetmarket.model.Computers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.ui.Model;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import service.ComputerService;
+import net.berduchev.internetmarket.service.ComputerService;
 
 import java.awt.print.Book;
 

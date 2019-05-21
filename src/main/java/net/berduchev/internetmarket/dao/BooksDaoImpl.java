@@ -1,6 +1,6 @@
-package dao;
+package net.berduchev.internetmarket.dao;
 
-import model.Books;
+import net.berduchev.internetmarket.model.Books;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.slf4j.Logger;

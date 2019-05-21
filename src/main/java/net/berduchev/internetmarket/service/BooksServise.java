@@ -1,6 +1,6 @@
-package service;
+package net.berduchev.internetmarket.service;
 
-import model.Books;
+import net.berduchev.internetmarket.model.Books;
 
 import java.util.List;
 

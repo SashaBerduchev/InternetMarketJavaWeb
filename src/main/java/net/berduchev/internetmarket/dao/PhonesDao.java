@@ -1,6 +1,6 @@
-package dao;
+package net.berduchev.internetmarket.dao;
 
-import model.Phones;
+import net.berduchev.internetmarket.model.Phones;
 
 import java.util.List;
 

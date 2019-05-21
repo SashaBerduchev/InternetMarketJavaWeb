@@ -59,7 +59,7 @@
 
 <h1>Add a Phones</h1>
 
-<c:url var="addAction" value="/phone/add"/>
+<c:url var="addAction" value="/index.jsp/"/>
 
 <form:form action="${addAction}" commandName="phones">
     <table>

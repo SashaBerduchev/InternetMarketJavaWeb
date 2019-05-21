@@ -1,6 +1,6 @@
-package service;
+package net.berduchev.internetmarket.service;
 
-import model.Phones;
+import net.berduchev.internetmarket.model.Phones;
 
 import java.util.List;
 
