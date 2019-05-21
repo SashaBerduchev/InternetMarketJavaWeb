@@ -42,7 +42,7 @@ http://www.springframework.org/schema/tx ">
         </property>
     </bean>
 
-    <!--BookDao and BookService beans-->
+    <!--PhonesDao and PhoneService beans-->
     <bean id="bookDao" class="net.berduchev.internetmarket.dao.BooksDaoImpl">
         <property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory"/>
     </bean>
@@ -50,6 +50,36 @@ http://www.springframework.org/schema/tx ">
     <bean id="bookService" class="net.berduchev.internetmarket.service.BooksServiseImpl">
         <property name="" ref="bookDao"/>
     </bean>
+
+
+
+    <bean id="hibernate4AnnotatedSessionFactory"
+          class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="annotatedClasses">
+            <list>
+                <value>net.berduchev.internetmarket.model.Phones</value>
+            </list>
+        </property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect
+                </prop>
+                <prop key="hibernate.show_sql">true</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!--BookDao and BookService beans-->
+    <bean id="bookDao" class="net.berduchev.internetmarket.dao.PhonesDaoImpl">
+        <property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory"/>
+    </bean>
+
+    <bean id="bookService" class="net.berduchev.internetmarket.service.PhonesServiceImpl">
+        <property name="" ref="bookDao"/>
+    </bean>
+
+
 
     <context:component-scan base-package="net.berduchev.internetmarket"/>
 
