@@ -13,7 +13,7 @@ import java.util.List;
 public class PhonesDaoImpl implements PhonesDao {
    private  static final Logger LOGGER = LoggerFactory.getLogger(PhonesDaoImpl.class);
 
-   private SessionFactory sessionFactory;
+   public SessionFactory sessionFactory;
 
    public void setSessionFactory(SessionFactory sessionFactory){this.sessionFactory = sessionFactory;}
 

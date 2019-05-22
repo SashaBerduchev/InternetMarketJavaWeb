@@ -10,7 +10,7 @@ import java.util.List;
 @Service
 public class BooksServiseImpl implements BooksServise {
     private BooksDao booksDao;
-    private  void setBooksDao(BooksDao booksDao){this.booksDao = booksDao;}
+    public void setBooksDao(BooksDao booksDao){this.booksDao = booksDao;}
     @Override
     @Transactional
     public void addBooks(Books books) {

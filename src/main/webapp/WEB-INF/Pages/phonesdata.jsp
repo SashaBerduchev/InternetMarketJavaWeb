@@ -34,14 +34,14 @@
     <th width="120">Battery</th>
 </tr>
 <tr>
-    <td>${phones.id}</td>
-    <td>${phones.Firm}</td>
-    <td>${phones.Model}</td>
-    <td>${phones.Quantity}</td>
-    <td>${phones.Processor}</td>
-    <td>${phones.RAM}</td>
-    <td>${phones.Battery}</td>
-    <td>${phones.Cost}</td>
+    <td><c:out value="${phones.id}"/></td>
+    <td><c:out value="${phones.Firm}"/></td>
+    <td><c:out value="${phones.Model}"/></td>
+    <td><c:out value="${phones.Quantity}"/></td>
+    <td><c:out value="${phones.Processor}"/></td>
+    <td><c:out value="${phones.RAM}"/></td>
+    <td><c:out value="${phones.Battery}"/></td>
+    <td><c:out value="${phones.Cost}"/></td>
 </tr>
 </table>
 </body>

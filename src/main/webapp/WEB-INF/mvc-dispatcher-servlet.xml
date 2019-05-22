@@ -42,13 +42,13 @@ http://www.springframework.org/schema/tx ">
         </property>
     </bean>
 
-    <!--PhonesDao and PhoneService beans-->
+    <!--BooksDao and BooksServise beans-->
     <bean id="bookDao" class="net.berduchev.internetmarket.dao.BooksDaoImpl">
         <property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory"/>
     </bean>
 
     <bean id="bookService" class="net.berduchev.internetmarket.service.BooksServiseImpl">
-        <property name="" ref="bookDao"/>
+        <property name="booksDao" ref="bookDao"/>
     </bean>
 
 
@@ -70,15 +70,42 @@ http://www.springframework.org/schema/tx ">
         </property>
     </bean>
 
-    <!--BookDao and BookService beans-->
-    <bean id="bookDao" class="net.berduchev.internetmarket.dao.PhonesDaoImpl">
+    <!--PhonesDao and PhonesServise beans-->
+    <bean id="phonesDao" class="net.berduchev.internetmarket.dao.PhonesDaoImpl">
         <property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory"/>
     </bean>
 
-    <bean id="bookService" class="net.berduchev.internetmarket.service.PhonesServiceImpl">
-        <property name="" ref="bookDao"/>
+    <bean id="phonesService" class="net.berduchev.internetmarket.service.PhonesServiceImpl">
+        <property name="phonesDao" ref="phonesDao"/>
     </bean>
 
+
+
+    <bean id="hibernate4AnnotatedSessionFactory"
+          class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="annotatedClasses">
+            <list>
+                <value>net.berduchev.internetmarket.model.Computers</value>
+            </list>
+        </property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect
+                </prop>
+                <prop key="hibernate.show_sql">true</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!--ComputerDao and CompServise beans-->
+    <bean id="computersDao" class="net.berduchev.internetmarket.dao.ComputersDaoImpl">
+        <property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory"/>
+    </bean>
+
+    <bean id="computersService" class="net.berduchev.internetmarket.service.ComputersServiceImpl">
+        <property name="computersDao" ref="computersDao"/>
+    </bean>
 
 
     <context:component-scan base-package="net.berduchev.internetmarket"/>
