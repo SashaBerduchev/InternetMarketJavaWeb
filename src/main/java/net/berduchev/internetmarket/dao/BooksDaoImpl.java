@@ -14,6 +14,8 @@ public class BooksDaoImpl implements BooksDao{
     public static  final Logger LOGGER = LoggerFactory.getLogger(BooksDaoImpl.class);
 
     public SessionFactory sessionFactory;
+
+    public void setSessionFactory(SessionFactory sessionFactory){this.sessionFactory = sessionFactory;}
     @Override
     public void addBooks(Books books) {
         Session session = this.sessionFactory.getCurrentSession();

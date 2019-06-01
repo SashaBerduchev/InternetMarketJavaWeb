@@ -16,6 +16,8 @@ public class ComputersDaoImpl implements ComputersDao {
 
     private SessionFactory sessionFactory;
 
+    public void setSessionFactory(SessionFactory sessionFactory){this.sessionFactory = sessionFactory;}
+
     @Override
     public void addComputersCard(Computers computers) {
         Session session = this.sessionFactory.getCurrentSession();
