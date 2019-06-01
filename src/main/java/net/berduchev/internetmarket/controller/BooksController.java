@@ -1,5 +1,6 @@
 package net.berduchev.internetmarket.controller;
 
+import com.mysql.cj.xdevapi.SessionFactory;
 import net.berduchev.internetmarket.model.Books;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -19,14 +20,14 @@ public class BooksController {
 
     @RequestMapping(value = "books", method = RequestMethod.GET)
     public String listBooks(Model model){
-        model.addAttribute("phones", new Books());
-        model.addAttribute("listPhones", this.booksServise.listBooksList());
+        model.addAttribute("books", new Books());
+        model.addAttribute("listBooks", this.booksServise.listBooksList());
 
         return "books";
     }
 
     @RequestMapping(value = "/books/add", method = RequestMethod.POST)
-    public String addPhones(@ModelAttribute("phone")Books books){
+    public String addPhones(@ModelAttribute("book")Books books){
         if(books.getId() == 0){
             this.booksServise.addBooks(books);
         }else{
