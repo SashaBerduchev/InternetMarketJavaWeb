@@ -16,10 +16,9 @@ import net.berduchev.internetmarket.service.PhoneService;
 @Controller
 public class PhonesController {
     private PhoneService phoneService;
-
     @Autowired(required = true)
     @Qualifier(value = "phonesService")
-    public void setPhoneServise(PhoneService phoneService){this.phoneService = phoneService;}
+    public void setPhoneService(PhoneService phoneService){this.phoneService = phoneService;}
 
 
     @RequestMapping(value = "phones", method = RequestMethod.GET)

@@ -34,6 +34,8 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/u
         <property name="annotatedClasses">
             <list>
                 <value>net.berduchev.internetmarket.model.Books</value>
+                <value>net.berduchev.internetmarket.model.Phones</value>
+                <value>net.berduchev.internetmarket.model.Computers</value>
             </list>
         </property>
         <property name="hibernateProperties">
@@ -54,24 +56,6 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/u
         <property name="booksDao" ref="bookDao"/>
     </bean>
 
-
-    <bean id="hibernate4AnnotatedSessionFactory"
-          class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
-        <property name="dataSource" ref="dataSource"/>
-        <property name="annotatedClasses">
-            <list>
-                <value>net.berduchev.internetmarket.model.Phones</value>
-            </list>
-        </property>
-        <property name="hibernateProperties">
-            <props>
-                <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect
-                </prop>
-                <prop key="hibernate.show_sql">true</prop>
-            </props>
-        </property>
-    </bean>
-
     <!--PhonesDao and PhonesServise beans-->
     <bean id="phonesDao" class="net.berduchev.internetmarket.dao.PhonesDaoImpl">
         <property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory"/>
@@ -79,24 +63,6 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/u
 
     <bean id="phonesService" class="net.berduchev.internetmarket.service.PhonesServiceImpl">
         <property name="phonesDao" ref="phonesDao"/>
-    </bean>
-
-
-    <bean id="hibernate4AnnotatedSessionFactory"
-          class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
-        <property name="dataSource" ref="dataSource"/>
-        <property name="annotatedClasses">
-            <list>
-                <value>net.berduchev.internetmarket.model.Computers</value>
-            </list>
-        </property>
-        <property name="hibernateProperties">
-            <props>
-                <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect
-                </prop>
-                <prop key="hibernate.show_sql">true</prop>
-            </props>
-        </property>
     </bean>
 
     <!--ComputerDao and CompServise beans-->

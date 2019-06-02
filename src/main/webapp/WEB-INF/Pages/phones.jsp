@@ -59,9 +59,9 @@
 
 <h1>Add a Phones</h1>
 
-<c:url var="addAction" value="/phones"/>
+<c:url var="addAction" value="/phone/add"/>
 
-<form:form method="get" action="${addAction}" commandName="phones">
+<form:form method="get" action="${addAction}" commandName="phone">
     <table>
         <c:if test="${!empty phone}">
             <tr>
