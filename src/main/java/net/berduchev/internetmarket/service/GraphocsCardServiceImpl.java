@@ -3,16 +3,14 @@ package net.berduchev.internetmarket.service;
 import net.berduchev.internetmarket.dao.GraphicsCardDao;
 import net.berduchev.internetmarket.dao.PhonesDao;
 import net.berduchev.internetmarket.model.GrphicsCard;
-import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.List;
 
-@Service
-public class GraphicsCardImpl implements GraficsCardService {
+public class GraphocsCardServiceImpl implements GraficsCardService {
     private GraphicsCardDao graphicsCardDao;
 
-    public  void setGraphicsCardDao(PhonesDao phonesDao){this.graphicsCardDao = graphicsCardDao;}
+    public  void setGraphicsCardDao(GraphicsCardDao graphicsCardDao){this.graphicsCardDao = graphicsCardDao;}
 
     @Override
     @Transactional

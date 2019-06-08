@@ -74,6 +74,14 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/u
         <property name="computersDao" ref="computersDao"/>
     </bean>
 
+    <bean id="graphicsCardDao" class="net.berduchev.internetmarket.dao.GraphicsCardDaoImpl">
+        <property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory"/>
+    </bean>
+
+    <bean id="graphicsCard" class="net.berduchev.internetmarket.service.GraphocsCardServiceImpl">
+        <property name="graphicsCardDao" ref="graphicsCardDao"/>
+    </bean>
+
 
     <context:component-scan base-package="net.berduchev.internetmarket"/>
 

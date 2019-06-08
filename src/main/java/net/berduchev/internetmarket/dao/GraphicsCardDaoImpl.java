@@ -12,16 +12,16 @@ import java.util.List;
 
 @Repository
 public class GraphicsCardDaoImpl implements GraphicsCardDao {
-    private  static final Logger LOGGER = LoggerFactory.getLogger(PhonesDaoImpl.class);
+    private  static final Logger LOGGER = LoggerFactory.getLogger(GraphicsCardDaoImpl.class);
 
-    private SessionFactory sessionFactory;
+    public SessionFactory sessionFactory;
 
     public void setSessionFactory(SessionFactory sessionFactory){this.sessionFactory = sessionFactory;}
     @Override
     public void addGraficsCard(GrphicsCard graphics) {
         Session session = this.sessionFactory.getCurrentSession();
         session.persist(graphics);
-        LOGGER.info("Phone successfully saved. phones details: " + graphics);
+        LOGGER.info("Card successfully saved. phones details: " + graphics);
     }
 
     @Override

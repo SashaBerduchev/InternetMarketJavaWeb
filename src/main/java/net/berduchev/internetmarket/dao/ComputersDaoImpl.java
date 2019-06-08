@@ -12,7 +12,7 @@ import java.util.List;
 
 @Repository
 public class ComputersDaoImpl implements ComputersDao {
-    private  static final Logger LOGGER = LoggerFactory.getLogger(PhonesDaoImpl.class);
+    private  static final Logger LOGGER = LoggerFactory.getLogger(ComputersDaoImpl.class);
 
     private SessionFactory sessionFactory;
 
